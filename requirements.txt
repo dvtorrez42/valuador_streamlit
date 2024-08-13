@@ -1,7 +1,7 @@
 streamlit
 requests
 scikit-learn
-numpy 
+numpy==1.26.0 
 pydantic 
 joblib 
 pandas

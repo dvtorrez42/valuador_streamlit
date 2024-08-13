@@ -16,7 +16,7 @@ H3_6_OPTIONS = ['868b221a7ffffff', '868b22117ffffff', '868b22187ffffff',
        '868b22c6fffffff', '868b2211fffffff', '868b2289fffffff',
        '868b2256fffffff']
 
-price_pipe = joblib.load('./models/price_pipe.joblib')
+price_pipe = joblib.load('./price_pipe.joblib')
 
 def predict_house_price_new(banios, estacionamientos, m2C, m2T, municipio, recamaras, h3_6):
     

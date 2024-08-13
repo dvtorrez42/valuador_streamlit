@@ -52,11 +52,11 @@ st.title("Tase su casa virtualmente")
 municipio=st.selectbox(":round_pushpin: Zona:", options=MUNICIPIOS_OPTIONS, index=2, 
                        #format_func=special_internal_function, 
                        key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Elegir una zona de la ciudad", disabled=False, label_visibility="visible")
-m2T = st.number_input(":triangular_ruler: Metros cuadrados cubiertos", min_value=0, max_value=10000, value=200)
-m2C = st.number_input(":triangular_ruler: Metros cuadrados cubiertos", min_value=0, max_value=10000, value=300)
-recamaras = st.number_input(":bed: Cantidad de cuartos", min_value=0, max_value=20, value=3)
-banios = st.number_input(":toilet: Cantidad de baños", min_value=0, max_value=20, value=3)
-estacionamientos = st.number_input(":car: Cantidad de estacionamientos", min_value=0, max_value=20, value=2)
+m2T = st.slider(":triangular_ruler: Metros cuadrados totales", min_value=50, max_value=1000, value=None, step=50)
+m2C = st.slider(":triangular_ruler: Metros cuadrados cubiertos", min_value=50, max_value=1000, value=None, step=50)
+recamaras = st.slider(":bed: Cantidad de cuartos", min_value=1, max_value=5, step=1, value=None)
+banios = st.slider(":toilet: Cantidad de baños", min_value=1, max_value=20, step=1, value=None)
+estacionamientos = st.slider(":car: Cantidad de estacionamientos", min_value=1, max_value=3, step=1, value=None)
 h3_6=st.selectbox(":round_pushpin: Zona especial:", options=H3_6_OPTIONS, index=2, 
                        #format_func=special_internal_function, 
                        key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Elegir una zona de la ciudad", disabled=False, label_visibility="visible")

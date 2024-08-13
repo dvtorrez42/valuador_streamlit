@@ -61,9 +61,10 @@ m2C = st.slider(":triangular_ruler: Metros cuadrados cubiertos", min_value=50, m
 recamaras = st.slider(":bed: Cantidad de cuartos", min_value=1, max_value=5, step=1, value=None)
 banios = st.slider(":toilet: Cantidad de baños", min_value=1, max_value=5, step=1, value=None)
 estacionamientos = st.slider(":car: Cantidad de estacionamientos", min_value=1, max_value=3, step=1, value=None)
-h3_6=st.selectbox(":round_pushpin: Zona especial:", options=H3_6_OPTIONS, index=2, 
-                       #format_func=special_internal_function, 
-                       key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Elegir una zona de la ciudad", disabled=False, label_visibility="visible")
+h3_6 = '868b22187ffffff'
+#h3_6=st.selectbox(":round_pushpin: Zona especial:", options=H3_6_OPTIONS, index=2, 
+#                       #format_func=special_internal_function, 
+#                       key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Elegir una zona de la ciudad", disabled=False, label_visibility="visible")
 
 if st.button("Predict"):
     precio_predicho = predict_house_price_new(banios=banios,

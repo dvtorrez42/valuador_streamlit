@@ -60,7 +60,7 @@ m2T = st.slider(":triangular_ruler: Metros cuadrados totales", min_value=50, max
 m2C = st.slider(":triangular_ruler: Metros cuadrados cubiertos", min_value=50, max_value=1000, value=None, step=50)
 recamaras = st.slider(":bed: Cantidad de cuartos", min_value=1, max_value=5, step=1, value=None)
 banios = st.slider(":toilet: Cantidad de baños", min_value=1, max_value=5, step=1, value=None)
-estacionamientos = st.slider(":car: Cantidad de estacionamientos", min_value=1, max_value=3, step=1, value=None)
+estacionamientos = st.slider(":car: Cantidad de estacionamientos", min_value=0, max_value=3, step=1, value=None)
 h3_6 = '868b22187ffffff'
 #h3_6=st.selectbox(":round_pushpin: Zona especial:", options=H3_6_OPTIONS, index=2, 
 #                       #format_func=special_internal_function, 

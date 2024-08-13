@@ -66,7 +66,7 @@ h3_6 = '868b22187ffffff'
 #                       #format_func=special_internal_function, 
 #                       key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="Elegir una zona de la ciudad", disabled=False, label_visibility="visible")
 
-if st.button("Predict"):
+if st.button("Tasar con Inteligencia Artificial"):
     precio_predicho = predict_house_price_new(banios=banios,
                                             estacionamientos=estacionamientos,
                                             m2C=m2C,

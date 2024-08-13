@@ -5,3 +5,5 @@ numpy
 pydantic 
 joblib 
 pandas
+feature_engine
+catboost

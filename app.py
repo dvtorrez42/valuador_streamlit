@@ -73,6 +73,6 @@ if st.button("Predict"):
     
     #result = requests.get("http://fastapi:8000/predict", params=params) 
     if precio_predicho > 0:
-        st.success(f"El precio aproximado es de: {precio_predicho}")
+        st.success(f"El precio aproximado es de: Bs. {round(np.exp(precio_predicho))}")
     else:
         st.error("Hubo un error en la tasación. Por favor contactarse al teléfono 12345678.")
